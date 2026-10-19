@@ -12,6 +12,7 @@ Vos fichiers restent sur votre ordinateur.
 
 **[Télécharger la préversion gratuite](https://github.com/Gremy44/NextExplorer-Downloads/releases)**
 · [Installer](INSTALLATION.md) · [Toutes les fonctions](FONCTIONNALITES.md)
+· [La suite du projet](#la-suite-du-projet)
 
 ## Déposer un fichier sans quitter la page
 
@@ -127,6 +128,33 @@ au survol. Le résultat reste dans le volet d’aperçu pendant la navigation.
 [![Carte d’occupation du dossier dans le volet redimensionné](images/espace-disque-1920.png)](images/espace-disque-1920.png)
 
 *1920 × 1080 · Analyse réelle du petit projet fictif ; aucun fichier personnel scanné.*
+
+## La suite du projet
+
+La version actuelle pose les bases. Les évolutions suivantes sont prévues ou
+à l’étude ; **elles ne sont pas incluses dans la préversion téléchargée**.
+
+| Axe | Ce que nous voulons apporter | Prochaine validation |
+| --- | --- | --- |
+| **IA locale facultative** | Suggérer un classement d’après le contenu des documents et des images, puis retrouver des fichiers par leur sens. À terme, exploiter les consignes d’une page pour préparer les fichiers à y déposer. | Comparer de petits modèles, mesurer leur utilité et leurs besoins matériels. Moteur et modèle encore à choisir ; téléchargement explicite et dossiers autorisés par l’utilisateur. |
+| **Refonte progressive du design et de l’ergonomie** | Une interface plus claire et plus légère : mieux hiérarchiser les actions, harmoniser les outils et affiner le panneau latéral comme la vue complète, dans la continuité de Material 3. | Tester les parcours, la lisibilité, l’accessibilité et les différentes largeurs de fenêtre. |
+| **Davantage de formats en aperçu** | Étendre la consultation locale des documents bureautiques, tableaux, images et formats spécialisés, à partir d’un inventaire de 100 formats courants. | Corriger les raccordements incomplets, commencer par les lecteurs réutilisables, puis qualifier chaque format avec de vrais fichiers et de gros volumes. |
+
+Parmi les pistes d’aperçu : documents DOCX/ODT, tableaux XLSX/ODS, meilleure
+présentation des CSV et, selon les moteurs retenus, aperçus HEIC, PSD ou RAW.
+Il s’agit de **consulter le contenu**, pas de remplacer leurs logiciels d’édition.
+L’inventaire de 100 formats guide les priorités ; ce n’est pas une annonce de
+compatibilité universelle.
+
+**La priorité reste de fiabiliser la base gratuite et son installation**, puis
+de valider l’apport de l’IA. Les parcours classiques resteront utilisables sans
+modèle. L’IA intégrée devra traiter les fichiers localement, sans repli cloud
+implicite ; son périmètre et sa compatibilité seront annoncés après essais.
+La console avec Codex montrée plus haut est un usage distinct, déjà possible.
+
+Une future offre Pro pourra regrouper des capacités avancées si leur gain est
+démontré. Aucun tarif ni calendrier de livraison n’est fixé ici ; les fonctions
+gratuites de la version reçue restent utilisables selon sa licence.
 
 ## Essayer la préversion
 

@@ -183,6 +183,29 @@ Préférences de thème, navigation, sélection, miniatures, extensions, colonne
 unités, affichages et tri par dossier, démarrage et raccourcis configurables.
 L’export des réglages pris en charge ne copie ni vos fichiers ni l’index.
 
+## Évolutions prévues ou à l’étude
+
+La [présentation du projet](README.md) distingue les fonctions livrées de la suite :
+
+- **IA locale facultative :** évaluer d’abord un petit moteur sur le classement
+  de documents et d’images et la recherche par sens. Téléchargement choisi,
+  périmètre autorisé, résultats corrigeables et validation avant déplacement.
+  Les consignes de sites, résumés et autres capacités viendront seulement après
+  évaluation séparée. Aucun modèle ni moteur définitif n’est annoncé.
+- **Design et ergonomie :** refonte progressive des parcours et de la hiérarchie
+  des actions, cohérence Material 3, outils moins encombrants, adaptation aux
+  largeurs du panneau et améliorations d’accessibilité.
+- **Formats d’aperçu :** élargir la couverture à partir de l’audit de 100 formats,
+  en privilégiant les parcours existants à compléter et les lecteurs réutilisables.
+  Bureautique, grilles de tableurs et images spécialisées sont des pistes ;
+  fidélité, versions, moteurs, limites de taille et temps de lecture restent
+  à qualifier pour chaque famille. Aucune promesse de lire les 100 formats.
+
+La qualification de la base gratuite et l’installation sur Windows propre
+précèdent le lancement de l’IA. La liste ne constitue pas un calendrier de
+livraison ni une offre commerciale. Les fonctions classiques restent utilisables
+sans IA ; un éventuel pack Pro portera sur des capacités supplémentaires.
+
 ## Cadre de cette version
 
 Préversion technique pour **Windows 11 x64 et Chrome**, compagnon nécessaire,
