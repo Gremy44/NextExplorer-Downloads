@@ -6,6 +6,7 @@
   <a href="https://github.com/Gremy44/NextExplorer-Downloads/releases"><strong>Télécharger la préversion gratuite</strong></a>
   &nbsp; · &nbsp; <a href="INSTALLATION.md">Guide d’installation</a>
   &nbsp; · &nbsp; <a href="#la-suite-du-projet">La suite du projet</a>
+  &nbsp; · &nbsp; <a href="https://buymeacoffee.com/gremy_44">☕ Soutenir le projet</a>
 </p>
 
 **Un dossier à parcourir. Un document à déposer. Un projet à reprendre.**
@@ -173,6 +174,23 @@ générées par GitHub correspondent à ce dépôt documentaire.
 Les fonctions gratuites de la version reçue restent utilisables selon sa licence.
 
 </details>
+
+## Un café pour faire avancer NextExplorer
+
+Je développe NextExplorer en indépendant. Si ce projet vous plaît ou vous rend
+service, vous pouvez **m’offrir un café pour soutenir son développement**.
+
+Votre soutien m’aide à consacrer du temps aux améliorations qui comptent :
+une interface plus agréable, davantage de formats en aperçu et, à terme,
+des fonctions d’IA locale utiles et facultatives.
+
+<p align="center">
+  <a href="https://buymeacoffee.com/gremy_44"><img src="images/soutenir.png" alt="Offrir un café pour soutenir NextExplorer sur Buy Me a Coffee" width="320" height="64"></a>
+</p>
+
+**Chaque contribution est facultative. La version gratuite reste accessible
+avec ou sans soutien.** Merci à celles et ceux qui donnent un coup de pouce,
+partagent le projet ou prennent le temps de faire un retour.
 
 ## Construisons la suite
 
