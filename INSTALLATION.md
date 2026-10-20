@@ -16,21 +16,28 @@ pour installer l’application.
 
 1. Téléchargez `NextExplorer-<version>-Setup.exe` et, si vous souhaitez contrôler
    l’intégrité du fichier, `SHA256SUMS.txt` de la même release.
-2. Lancez l’installateur, choisissez Chrome et conservez l’identifiant prérempli.
+2. Lancez l’installateur et choisissez Chrome. L’identité officielle est déjà configurée.
    Examinez les changements annoncés, puis installez pour votre compte Windows.
-3. Ouvrez `chrome://extensions`, activez **Mode développeur**, puis choisissez
-   **Charger l’extension non empaquetée**.
-4. Sélectionnez `%LOCALAPPDATA%\Programs\NextExplorer\package\dist`.
-5. Épinglez NextExplorer et ouvrez son panneau. Vérifiez **Compagnon connecté**,
-   puis choisissez votre dossier de démonstration.
+3. Ajoutez l’extension depuis sa [fiche Chrome Web Store](https://chromewebstore.google.com/detail/afjflepinklhgicoppoobiichmjodgcp), **lorsque Google l’aura approuvée**. La fiche est en cours de soumission ; elle peut rester inaccessible pendant l’examen.
+4. Ouvrez NextExplorer et cliquez sur **Vérifier la connexion**. Si vous avez
+   lancé le téléchargement depuis l’accueil de l’extension, la vérification
+   reprend également à votre retour.
+5. Choisissez un premier dossier de démonstration avec le sélecteur visuel.
 
 L’extension et le compagnon doivent provenir de la même release. Ne chargez pas
-une seconde copie de l’extension depuis un autre dossier. Le parcours sans mode
-développeur sera disponible après la publication Chrome Web Store.
+une seconde copie de l’extension depuis un autre dossier.
 
 L’archive `NextExplorer-<version>-extension.zip` est fournie pour examiner ou
 charger séparément l’extension. Elle ne remplace pas l’installation du compagnon.
-Le chemin installé ci-dessus reste le parcours recommandé pour cette préversion.
+Pendant l’examen du Store, le chargement manuel reste disponible : ouvrez
+`chrome://extensions`, activez **Mode développeur**, choisissez **Charger
+l’extension non empaquetée**, puis sélectionnez
+`%LOCALAPPDATA%\Programs\NextExplorer\package\dist`.
+
+L’identité officielle de cette version est `afjflepinklhgicoppoobiichmjodgcp`.
+Une ancienne copie de développement peut avoir une autre identité : ses réglages
+ne sont pas transférés automatiquement. Exportez vos préférences et espaces
+avant de la retirer. Évitez de faire fonctionner deux copies simultanément.
 
 ## Vérifier une empreinte, si nécessaire
 
@@ -41,10 +48,37 @@ elle ne remplace pas une signature d’éditeur.
 
 ## Moteurs et limites
 
-Le paquet initial n’embarque pas FFmpeg, ImageMagick, ExifTool ou 7-Zip. Certains
-aperçus, conversions et archives restent donc indisponibles jusqu’à l’installation
-du moteur correspondant. Les réglages de l’extension indiquent les moteurs
-détectés ; leur préparation reste un parcours avancé dans cette préversion.
+Le compagnon suffit à la navigation, aux opérations sur les fichiers, aux tags,
+aux aperçus courants et à la console. Aucun modèle d’IA n’est requis.
+
+Dans **Réglages → Fonctions supplémentaires**, chaque fonction indique **Prêt**,
+**À ajouter**, ou **À vérifier** si le compagnon est déconnecté.
+
+| Fonction | Moteur facultatif |
+| --- | --- |
+| Images spécialisées, notamment TIFF, conversion et préparation d’images | ImageMagick (`magick`) |
+| Métadonnées détaillées ; nettoyage web avec ImageMagick | ExifTool (`exiftool`) |
+| Conversion, analyse et aperçus vidéo/audio | FFmpeg **et** FFprobe |
+| Archives avancées | 7-Zip (`7z`) ; le ZIP courant fonctionne sans lui |
+| Extraction de texte pour rechercher dans les PDF | Poppler (`pdftotext`) ; l’aperçu PDF reste disponible sans lui |
+
+Ces moteurs ne sont pas inclus dans le paquet léger et aucun n’est téléchargé
+automatiquement. Leur ajout reste **avancé** dans cette préversion :
+
+1. Terminez les traitements et fermez les sessions de console.
+2. Ouvrez PowerShell dans `%LOCALAPPDATA%\Programs\NextExplorer\package` et lancez
+   `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\setup-engines.ps1 -SkipMediaDownloader`.
+   Le script prépare 7-Zip, ImageMagick, FFmpeg/FFprobe et ExifTool ; il peut
+   contacter leurs distributeurs. Consultez ses messages et licences.
+3. Relancez **Installer ou réparer** depuis le menu Démarrer pour intégrer les
+   moteurs préparés au compagnon actif. Fermez puis rouvrez l’extension et
+   utilisez **Vérifier la connexion** dans ses réglages.
+
+Poppler n’est pas installé par ce script. Sa configuration reste manuelle ;
+l’aperçu PDF et la navigation n’en dépendent pas.
+L’assistant conserve les moteurs existants. Ne déplacez pas manuellement les
+fichiers d’un compagnon actif. En cas d’échec, partagez uniquement un diagnostic
+dont vous avez retiré les chemins personnels.
 
 Le compagnon possède les droits de votre compte Windows. Les tâches autorisées
 peuvent continuer après fermeture de Chrome. La console n’est pas un bac à sable.

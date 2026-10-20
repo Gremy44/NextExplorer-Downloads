@@ -1,6 +1,6 @@
 # NextExplorer — confidentialité
 
-Version du 19 octobre 2026. Editeur du projet : **Gremy44**. Contact : https://github.com/Gremy44/NextExplorer-Downloads/issues. Cette politique concerne la preversion distribuee sur ce canal officiel.
+Version du 20 octobre 2026. Editeur du projet : **Gremy44**. Contact : https://github.com/Gremy44/NextExplorer-Downloads/issues. Cette politique concerne la preversion distribuee sur ce canal officiel.
 
 ## Fonctionnement local
 
@@ -19,7 +19,7 @@ Selon les outils utilisés, NextExplorer traite les données suivantes :
 | Journaux d’opérations, tâches, sauvegardes et corbeille locale | Suivi des traitements, reprise et annulation sous conditions, dans les dossiers locaux du compagnon. Les tâches autorisées peuvent continuer quand le navigateur ferme. |
 | Commandes et sortie PowerShell | Mémoire de la session de console ; NextExplorer n’enregistre pas cet historique. Les commandes et programmes lancés peuvent écrire leurs propres fichiers ou accéder au réseau. |
 
-Les documents choisis peuvent eux-mêmes contenir des données personnelles ou sensibles. L’utilisateur choisit les fichiers et opérations ; la console et le compagnon disposent des droits habituels de son compte Windows.
+Les documents choisis peuvent eux-mêmes contenir des données personnelles ou sensibles. Les métadonnées consultées peuvent comprendre un auteur, des coordonnées ou la position GPS enregistrée dans une photo ; NextExplorer ne demande pas la géolocalisation du navigateur. Ces informations sont traitées localement, comme les chemins et l’historique des actions. L’utilisateur choisit les fichiers et opérations ; la console et le compagnon disposent des droits habituels de son compte Windows.
 
 ## Communications et destinataires
 

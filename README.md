@@ -16,7 +16,9 @@ de place, et un terminal dans le dossier de travail.
 
 **Windows 11 x64 et Chrome · gratuit pour les usages personnels et professionnels.**
 Préversion technique avec extension et compagnon Windows non signé.
-L’installation est manuelle ; commencez avec des fichiers de démonstration.
+La version 1.0.3 apporte la connexion guidée et l’identité Chrome Web Store.
+La fiche Store est en cours de soumission ; le chargement manuel reste possible
+pendant son examen. Commencez avec des fichiers de démonstration.
 [Bien démarrer](INSTALLATION.md).
 
 ## Le bon fichier, directement sur le site
