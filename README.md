@@ -1,5 +1,7 @@
 # NextExplorer
 
+**Code source ouvert · 1.0.8 :** [extension, compagnon et serveur MCP local sous MIT](https://github.com/Gremy44/NextExplorer). [Guide MCP](https://github.com/Gremy44/NextExplorer/blob/main/MCP.md). Les binaires pilotes 1.0.7 restent inchangés.
+
 ![NextExplorer : votre explorateur, dans Chrome. Gardez vos fichiers à côté du web.](images/banniere.png)
 
 <p align="center">
@@ -173,7 +175,7 @@ au site choisi ; les outils externes comme Codex ont leurs propres connexions.
 ### Gratuit signifie-t-il open source ?
 
 L’usage personnel et professionnel des versions livrées est gratuit selon
-la [licence](LICENSE). Le code applicatif reste privé. Ce dépôt contient
+la [licence](LICENSE). Le code applicatif est désormais public sous [MIT](https://github.com/Gremy44/NextExplorer/blob/main/LICENSE). Ce dépôt contient
 documentation, téléchargements et retours ; les archives « Source code »
 générées par GitHub correspondent à ce dépôt documentaire.
 Les fonctions gratuites de la version reçue restent utilisables selon sa licence.
